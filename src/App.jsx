@@ -50,7 +50,7 @@ const contacts = [
 ];
 
 function App() {
-  const [activePage, setActivePage] = useState('about');
+  const [activePage, setActivePage] = useState('home');
 
   const currentPage = useMemo(
     () => pages.find((page) => page.id === activePage) ?? pages[1],
